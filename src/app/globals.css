@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Fonts ── */
+  --font-sans: "Inter", sans-serif;
+
+  /* ── Brand Colors ── */
+  --color-primary: #495D6E;
+  --color-primary-dark: #324556;
+  --color-cta: #D89042;
+  --color-cta-dark: #8b5000;
+  --color-dark: #212223;
+  --color-neutral: #7F7E7C;
+
+  /* ── Surface Colors ── */
+  --color-surface: #fcf9f6;
+  --color-surface-low: #f6f3f0;
+  --color-surface-card: #ffffff;
+
+  /* ── Border ── */
+  --color-outline-soft: rgba(195, 199, 204, 0.3);
+
+  /* ── Shadows ── */
+  --shadow-ambient: 0 20px 40px -15px rgba(73, 93, 110, 0.12);
+  --shadow-ambient-lg: 0 30px 60px -20px rgba(73, 93, 110, 0.18);
+
+  /* ── Background Images ── */
+  --background-image-hero-gradient: linear-gradient(
+    75deg,
+    rgba(33, 34, 35, 0.95) 0%,
+    rgba(33, 34, 35, 0.6) 50%,
+    rgba(33, 34, 35, 0.2) 100%
+  );
+  --background-image-primary-gradient: linear-gradient(135deg, #324556 0%, #495D6E 100%);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    @apply bg-surface text-dark antialiased;
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    @apply bg-cta text-white;
+  }
+
+  [id] {
+    scroll-margin-top: 80px;
+  }
+}
+
+@layer components {
+  .skip-link {
+    @apply sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:bg-cta focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:font-bold focus:text-sm;
+  }
+
+  .glass-nav {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      75deg,
+      rgba(33, 34, 35, 0.95) 0%,
+      rgba(33, 34, 35, 0.6) 50%,
+      rgba(33, 34, 35, 0.15) 100%
+    );
+  }
+
+  .section-wrapper {
+    @apply py-24 px-6 lg:px-12;
+  }
+
+  .container-layout {
+    @apply max-w-[1400px] mx-auto;
+  }
+
+  .hover-lift {
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px -15px rgba(73, 93, 110, 0.15);
+  }
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
