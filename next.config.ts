@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Allow Unsplash images (used throughout the site)
   images: {
     remotePatterns: [
       {
@@ -15,13 +14,9 @@ const nextConfig: NextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256],
   },
 
-  // Compress responses
   compress: true,
-
-  // Strict mode for better React hygiene
   reactStrictMode: true,
 
-  // Bundle analyzer friendly
   experimental: {
     optimizePackageImports: ["lucide-react", "framer-motion"],
   },
