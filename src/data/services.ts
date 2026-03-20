@@ -51,7 +51,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     description:
       "Kapoor Transport operates one of India's largest specialized heavy-transport fleets. From single-truck FTL runs to coordinated multi-vehicle convoys, we deliver industrial cargo safely, on time, and with full visibility across 28 states.",
     image:
-      "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=2000&q=80",
+      "https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1800&q=80&auto=format&fit=crop",
     stats: [
       { value: "500+", label: "Fleet Vehicles" },
       { value: "28", label: "States Covered" },
@@ -78,7 +78,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     benefits: [
       { title: "Cost Efficiency", desc: "Optimized routing and consolidated loads reduce per-unit transport costs by up to 22%.", stat: "22%", statLabel: "Cost Reduction" },
       { title: "Zero Downtime", desc: "Backup fleet allocation ensures your supply chain never stops, even during peak demand.", stat: "Zero", statLabel: "Supply Halts" },
-      { title: "Full Compliance", desc: "All vehicles are AEO certified, GST compliant, and carry valid interstate permits.", stat: "100%", statLabel: "Compliant" },
+      { title: "Full Compliance", desc: "All vehicles are GST compliant and carry valid interstate permits across all 28 states.", stat: "100%", statLabel: "Compliant" },
       { title: "Dedicated Support", desc: "24/7 command center with a dedicated operations manager for every enterprise account.", stat: "24/7", statLabel: "Support" },
     ],
     faqs: [
@@ -213,7 +213,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     description:
       "Our 500+ vehicle fleet is the backbone of Kapoor Transport's operational excellence. From dedicated fleet leasing to contract logistics, we provide the right asset for every cargo type — maintained to the highest standards, tracked in real time, and operated by certified professionals.",
     image:
-      "https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=2000&q=80",
+      "https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1800&q=80&auto=format&fit=crop",
     stats: [
       { value: "500+", label: "Active Vehicles" },
       { value: "99.2%", label: "Fleet Uptime" },
@@ -267,7 +267,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     description:
       "Industrial haulage is the core of what we do. Our multi-axle fleet handles the heaviest, most complex cargo movements for steel plants, power projects, and infrastructure developers across India.",
     image:
-      "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=2000&q=80",
+      "https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1800&q=80&auto=format&fit=crop",
     stats: [
       { value: "40T", label: "Max Payload" },
       { value: "500+", label: "Fleet Size" },

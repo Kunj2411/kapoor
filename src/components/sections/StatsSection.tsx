@@ -49,7 +49,7 @@ function CounterCard({
 
 export default function StatsSection() {
   return (
-    <section className="relative z-20 -mt-12 pb-16 px-6 lg:px-12">
+    <section className="relative z-20 -mt-20 pb-16 px-6 lg:px-12">
       <div className="max-w-[1400px] mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {STATS.map((s, i) => (

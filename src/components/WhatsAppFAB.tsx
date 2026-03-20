@@ -6,7 +6,7 @@ export default function WhatsAppFAB() {
       href={`https://wa.me/${SITE.whatsapp}?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20logistics%20services.`}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-8 right-8 z-50 flex items-center gap-3 bg-[#25D366] text-white pl-5 pr-4 py-3.5 rounded-full shadow-2xl hover:scale-105 transition-all active:scale-95 group"
+      className="fixed bottom-5 right-5 sm:bottom-8 sm:right-8 z-50 flex items-center gap-3 bg-[#25D366] text-white pl-5 pr-4 py-3.5 rounded-full shadow-2xl hover:scale-105 transition-all active:scale-95 group mb-safe"
       aria-label="Chat on WhatsApp"
     >
       <span className="font-bold tracking-tight text-sm hidden sm:block">

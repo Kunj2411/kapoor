@@ -94,7 +94,7 @@ export default function ServicesPage() {
   return (
     <>
       <section className="relative min-h-[88vh] flex items-end bg-dark overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=2400&q=80')" }} />
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/service.jpg')" }} />
         <div className="absolute inset-0 bg-gradient-to-r from-dark/95 via-dark/75 to-dark/30" />
         <div className="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent" />
         <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "linear-gradient(#fff 1px,transparent 1px),linear-gradient(90deg,#fff 1px,transparent 1px)", backgroundSize: "80px 80px" }} />
@@ -156,7 +156,7 @@ export default function ServicesPage() {
               </div>
             </div>
             <Reveal delay={0.15} className="relative">
-              <div className="w-full h-[520px] rounded-2xl bg-cover bg-center shadow-[0_30px_80px_-20px_rgba(33,34,35,0.3)]" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=80')" }} role="img" aria-label="Heavy cargo transport" />
+              <div className="w-full h-[520px] rounded-2xl bg-cover bg-center shadow-[0_30px_80px_-20px_rgba(33,34,35,0.3)]" style={{ backgroundImage: "url('/service.jpg')" }} role="img" aria-label="Heavy cargo transport" />
               <div className="absolute -bottom-6 -left-6 bg-dark text-white rounded-xl p-6 shadow-ambient-lg">
                 <div className="text-3xl font-black text-cta mb-1">500T+</div>
                 <div className="text-[10px] font-bold uppercase tracking-widest text-white/50">Max Payload</div>
@@ -271,7 +271,7 @@ export default function ServicesPage() {
 
       <section className="py-32 px-6 lg:px-12 bg-primary relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(216,144,66,0.15)_0%,transparent_55%)]" />
-        <div className="absolute inset-0 opacity-5 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=2000&q=80')" }} />
+        <div className="absolute inset-0 opacity-5 bg-cover bg-center" style={{ backgroundImage: "url('/service.jpg')" }} />
         <div className="max-w-[900px] mx-auto relative z-10 text-center">
           <Reveal>
             <span className="inline-flex items-center gap-2 text-cta font-black tracking-[0.35em] text-[10px] uppercase mb-6"><span className="w-6 h-px bg-cta" /> Ready to Begin</span>
@@ -286,7 +286,7 @@ export default function ServicesPage() {
               </a>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-8 mt-14 pt-10 border-t border-white/10">
-              {[{ icon: Truck, label: "500+ Fleet Vehicles" },{ icon: Shield, label: "ISO 9001:2015 Certified" },{ icon: Warehouse, label: "28 States Covered" }].map(({ icon: Icon, label }) => (
+              {[{ icon: Truck, label: "500+ Fleet Vehicles" },{ icon: Warehouse, label: "28 States Covered" },{ icon: Shield, label: "30+ Years Experience" }].map(({ icon: Icon, label }) => (
                 <div key={label} className="flex items-center gap-2.5 text-white/50">
                   <Icon className="w-4 h-4 text-cta/70" />
                   <span className="text-[11px] font-bold uppercase tracking-widest">{label}</span>
@@ -299,3 +299,6 @@ export default function ServicesPage() {
     </>
   );
 }
+
+
+

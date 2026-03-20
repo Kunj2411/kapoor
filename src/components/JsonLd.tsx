@@ -26,10 +26,10 @@ export default function JsonLd() {
         },
         address: {
           "@type": "PostalAddress",
-          streetAddress: "Industrial Area Phase II, Okhla",
-          addressLocality: "New Delhi",
-          addressRegion: "Delhi",
-          postalCode: "110020",
+          streetAddress: "Near G-4, Baleshwar Silverline, Opposite Baleshwar City, Hathijan Circle",
+          addressLocality: "Ahmedabad",
+          addressRegion: "Gujarat",
+          postalCode: "382445",
           addressCountry: "IN",
         },
         sameAs: [`https://wa.me/${SITE.whatsapp}`],
@@ -47,16 +47,16 @@ export default function JsonLd() {
         email: SITE.email,
         address: {
           "@type": "PostalAddress",
-          streetAddress: "Industrial Area Phase II, Okhla",
-          addressLocality: "New Delhi",
-          addressRegion: "Delhi",
-          postalCode: "110020",
+          streetAddress: "Near G-4, Baleshwar Silverline, Opposite Baleshwar City, Hathijan Circle",
+          addressLocality: "Ahmedabad",
+          addressRegion: "Gujarat",
+          postalCode: "382445",
           addressCountry: "IN",
         },
         geo: {
           "@type": "GeoCoordinates",
-          latitude: 28.5355,
-          longitude: 77.2503,
+          latitude: 22.9784,
+          longitude: 72.6446,
         },
         openingHoursSpecification: [
           {

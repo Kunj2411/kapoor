@@ -25,6 +25,9 @@ export default function Footer() {
               <a href={`tel:${SITE.phone}`} className="flex items-center gap-3 text-white/50 hover:text-cta transition-colors">
                 <Phone className="w-4 h-4 text-cta" /> {SITE.phone}
               </a>
+              <a href={`tel:${SITE.phone2}`} className="flex items-center gap-3 text-white/50 hover:text-cta transition-colors">
+                <Phone className="w-4 h-4 text-cta" /> {SITE.phone2}
+              </a>
               <a href={`mailto:${SITE.email}`} className="flex items-center gap-3 text-white/50 hover:text-cta transition-colors">
                 <Mail className="w-4 h-4 text-cta" /> {SITE.email}
               </a>
@@ -95,7 +98,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Kapoor Transport & Logistics Pvt. Ltd.
           </p>
           <div className="flex gap-8">
-            {["AEO Certified", "ISO 9001:2015", "GST Registered"].map((badge) => (
+            {["GST Registered"].map((badge) => (
               <span key={badge} className="text-white/20 text-[10px] uppercase font-black tracking-widest">
                 {badge}
               </span>

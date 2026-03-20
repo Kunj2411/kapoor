@@ -25,7 +25,7 @@ const values = [
   {
     icon: Award,
     title: "Excellence",
-    desc: "ISO 9001:2015 certified processes ensuring consistent, world-class service delivery on every project.",
+    desc: "Rigorous quality processes ensuring consistent, world-class service delivery on every project across India.",
   },
   {
     icon: Users,
@@ -50,7 +50,7 @@ export default function AboutPage() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=2000&q=80')",
+              "url('/about.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-dark/95 via-dark/70 to-dark/20" />
@@ -124,8 +124,7 @@ export default function AboutPage() {
               <div
                 className="w-full h-[480px] rounded-2xl bg-cover bg-center shadow-ambient-lg"
                 style={{
-                  backgroundImage:
-                    "url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1200&q=80')",
+                  backgroundImage: "url('/about.jpg')",
                 }}
                 role="img"
                 aria-label="Kapoor Transport fleet"

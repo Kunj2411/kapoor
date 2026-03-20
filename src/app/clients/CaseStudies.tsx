@@ -70,10 +70,10 @@ export default function CaseStudies() {
                 <p className="text-primary/60 text-sm leading-relaxed mb-6">{cs.desc}</p>
 
                 {/* Stats */}
-                <div className="grid grid-cols-4 gap-3 border-t border-outline-soft pt-6">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-outline-soft pt-6">
                   {cs.stats.map((s) => (
-                    <div key={s.label} className="text-center">
-                      <div className="text-lg font-black text-dark leading-none mb-1">{s.value}</div>
+                    <div key={s.label} className="text-center min-w-0">
+                      <div className="text-base font-black text-dark leading-none mb-1 truncate">{s.value}</div>
                       <div className="text-[9px] font-bold uppercase tracking-widest text-neutral leading-tight">
                         {s.label}
                       </div>

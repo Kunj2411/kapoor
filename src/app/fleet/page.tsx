@@ -53,7 +53,7 @@ export default function FleetPage() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=2000&q=80')",
+              "url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1800&q=80&auto=format&fit=crop')",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-dark/95 via-dark/70 to-dark/30" />
@@ -137,7 +137,7 @@ export default function FleetPage() {
                 className="w-full aspect-square rounded-2xl bg-cover bg-center shadow-ambient-lg"
                 style={{
                   backgroundImage:
-                    "url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=900&q=80')",
+                    "url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1800&q=80&auto=format&fit=crop')",
                 }}
                 role="img"
                 aria-label="Fleet telematics"

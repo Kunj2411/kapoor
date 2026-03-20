@@ -34,10 +34,10 @@ const REASONS = [
   },
   {
     icon: Award,
-    title: "ISO 9001:2015 Certified",
-    desc: "Every process audited and certified — from driver training to vehicle maintenance to documentation.",
-    stat: "ISO",
-    statLabel: "9001:2015",
+    title: "Quality Assured",
+    desc: "Every process audited and verified — from driver training to vehicle maintenance to documentation.",
+    stat: "100%",
+    statLabel: "Compliance",
   },
   {
     icon: HeadphonesIcon,

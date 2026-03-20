@@ -11,22 +11,11 @@ export const metadata: Metadata = {
 
 const offices = [
   {
-    name: "Global Headquarters",
+    name: "Headquarters – Ahmedabad, Gujarat",
     address: SITE.address,
     phone: SITE.phone,
+    phone2: SITE.phone2,
     email: SITE.email,
-  },
-  {
-    name: "Mumbai Distribution Center",
-    address: "Navi Mumbai Logistics Park, Belapur, Maharashtra 400614",
-    phone: "+91 22 4567 8901",
-    email: "mumbai@kapoortransport.in",
-  },
-  {
-    name: "Bangalore Tech-Logistics Hub",
-    address: "Whitefield Industrial Estate, Bangalore, Karnataka 560066",
-    phone: "+91 80 4567 8902",
-    email: "bangalore@kapoortransport.in",
   },
 ];
 
@@ -106,6 +95,14 @@ export default function ContactPage() {
                     >
                       <Phone className="w-4 h-4 text-cta" /> {office.phone}
                     </a>
+                    {office.phone2 && (
+                      <a
+                        href={`tel:${office.phone2}`}
+                        className="flex items-center gap-3 text-primary/60 hover:text-cta transition-colors"
+                      >
+                        <Phone className="w-4 h-4 text-cta" /> {office.phone2}
+                      </a>
+                    )}
                     <a
                       href={`mailto:${office.email}`}
                       className="flex items-center gap-3 text-primary/60 hover:text-cta transition-colors"
@@ -190,19 +187,19 @@ export default function ContactPage() {
               Our Location
             </span>
             <h2 className="text-3xl font-black text-dark tracking-tight">
-              Headquartered in New Delhi
+              Headquarters – Ahmedabad, Gujarat
             </h2>
           </div>
           <div className="rounded-2xl overflow-hidden shadow-ambient-lg border-8 border-white">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.0!2d77.2!3d28.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDMwJzAwLjAiTiA3N8KwMTInMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+              src="https://maps.app.goo.gl/UaYjzkJg6D5gzWSN8"
               width="100%"
               height="400"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Kapoor Transport Headquarters Location"
+              title="Kapoor Transport Company Headquarters – Ahmedabad, Gujarat"
             />
           </div>
         </div>

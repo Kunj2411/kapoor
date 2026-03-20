@@ -1,10 +1,11 @@
 export const SITE = {
-  name: "Kapoor Transport",
+  name: "Kapoor Transport Company",
   tagline: "Driving Trust Across India",
-  phone: "+91 11 4567 8900",
-  whatsapp: "911145678900",
-  email: "solutions@kapoortransport.in",
-  address: "Industrial Area Phase II, Okhla, New Delhi, Delhi 110020",
+  phone: "+91-9925195293",
+  phone2: "+91-8238885522",
+  whatsapp: "919925195293",
+  email: "ashwani@kapoortransportcompany.in",
+  address: "Near G-4, Baleshwar Silverline, Opposite Baleshwar City, Hathijan Circle, Ahmedabad, Gujarat 382445, India",
   founded: "1994",
   stats: [
     { value: "500+", label: "Active Industrial Fleet" },
@@ -144,7 +145,7 @@ export const FLEET_EXTENDED = [
     category: "Heavy Haulage",
     title: "Industrial Semi-Trailers",
     badge: "Heavy Duty",
-    image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=900&q=80",
+    image: "https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1800&q=80&auto=format&fit=crop",
     description: "High-performance trailers for structural steel, industrial machinery, and heavy coils across multi-state corridors.",
     specs: { Capacity: "25–40 Tons", Dimensions: "40′ × 8′ × 4′", Axle: "Multi-Axle", Count: "180+" },
     features: ["GPS + telematics", "Speed governor", "Hazmat certified", "24/7 support"],
@@ -154,7 +155,7 @@ export const FLEET_EXTENDED = [
     category: "General Freight",
     title: "Open Body Trucks",
     badge: "Rapid Transit",
-    image: "https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=900&q=80",
+    image: "https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1800&q=80&auto=format&fit=crop",
     description: "Reliable open-deck trucks for raw materials and industrial components requiring ease of loading.",
     specs: { Capacity: "9–21 Tons", Length: "17′ to 24′", Config: "6/10 Wheeler", Count: "200+" },
     features: ["Rapid loading", "Tarpaulin cover", "GPS tracking", "Flexible routing"],
@@ -285,8 +286,8 @@ export const CLIENT_LOGOS = [
 export const TIMELINE = [
   {
     year: "1994",
-    title: "Founded in New Delhi",
-    desc: "Kapoor Transport established with 12 trucks and a single corridor — Delhi to Ludhiana. First client: a Punjab steel rolling mill.",
+    title: "Founded in Ahmedabad",
+    desc: "Kapoor Transport established with 12 trucks and a single corridor — Ahmedabad to Surat. First client: a Gujarat industrial manufacturing unit.",
   },
   {
     year: "1999",
@@ -300,8 +301,8 @@ export const TIMELINE = [
   },
   {
     year: "2008",
-    title: "ISO 9001 Certification",
-    desc: "Achieved ISO 9001:2008 certification. Launched proprietary route intelligence system, reducing average transit times by 18%.",
+    title: "Quality Milestone",
+    desc: "Achieved quality management certification. Launched proprietary route intelligence system, reducing average transit times by 18%.",
   },
   {
     year: "2012",
@@ -330,7 +331,7 @@ export const INFRASTRUCTURE = [
   {
     title: "Command Center",
     stat: "24/7",
-    desc: "New Delhi operations hub with real-time fleet visibility, route monitoring, and emergency response coordination.",
+    desc: "Ahmedabad operations hub with real-time fleet visibility, route monitoring, and emergency response coordination.",
     icon: "Monitor",
   },
   {

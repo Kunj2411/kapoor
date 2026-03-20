@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CLIENTS } from "@/data/site";
+import { CLIENT_LOGOS } from "@/data/site";
 
 export default function ClientsStrip() {
   return (
@@ -14,18 +14,24 @@ export default function ClientsStrip() {
           Trusted by the Architects of Modern India
         </motion.p>
 
-        {/* Scrolling marquee */}
-        <div className="relative overflow-hidden">
-          <div className="flex gap-16 items-center animate-[marquee_20s_linear_infinite] whitespace-nowrap">
-            {[...CLIENTS, ...CLIENTS].map((client, i) => (
-              <span
-                key={`${client}-${i}`}
-                className="text-2xl font-black tracking-tighter italic text-primary/25 hover:text-primary/70 transition-colors duration-500 shrink-0 cursor-default"
-              >
-                {client}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+          {CLIENT_LOGOS.map((client, i) => (
+            <motion.div
+              key={client.name}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: i * 0.05 }}
+              className="flex flex-col items-center justify-center gap-1.5 bg-white border border-outline-soft rounded-xl px-4 py-6 group hover:border-cta/30 hover:shadow-ambient transition-all"
+            >
+              <span className="text-base font-black tracking-tight text-primary/30 group-hover:text-primary/70 transition-colors duration-300 text-center leading-tight grayscale group-hover:grayscale-0">
+                {client.name}
               </span>
-            ))}
-          </div>
+              <span className="text-[9px] font-bold uppercase tracking-widest text-neutral/40 group-hover:text-cta transition-colors">
+                {client.sector}
+              </span>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
