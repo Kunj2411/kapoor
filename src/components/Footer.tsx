@@ -40,6 +40,10 @@ export default function Footer() {
               <p className="flex items-start gap-3 text-white/50">
                 <MapPin className="w-4 h-4 text-cta mt-0.5 shrink-0" /> {SITE.address}
               </p>
+              <p className="flex items-center gap-3 text-white/50">
+                <span className="text-cta font-bold text-xs shrink-0">GST</span>
+                24AJTPK8292Q2Z1
+              </p>
             </div>
           </div>
 
