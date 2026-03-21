@@ -8,8 +8,8 @@ import {
 import Timeline from "./Timeline";
 
 export const metadata: Metadata = {
-  title: "About Us | Kapoor Transport",
-  description: "30+ years of industrial logistics excellence across India.",
+  title: "About Us | Kapoor Transport Company, AHB",
+  description: "30+ years of industrial logistics excellence across India. Learn about our vision, mission, and leadership.",
 };
 
 const ICON_MAP: Record<string, React.ElementType> = {
@@ -50,7 +50,7 @@ export default function AboutPage() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('/about.jpg')",
+              "url('/about1.jpeg')",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-dark/95 via-dark/70 to-dark/20" />
@@ -124,7 +124,7 @@ export default function AboutPage() {
               <div
                 className="w-full h-[480px] rounded-2xl bg-cover bg-center shadow-ambient-lg"
                 style={{
-                  backgroundImage: "url('/about.jpg')",
+                  backgroundImage: "url('/about1.jpeg')",
                 }}
                 role="img"
                 aria-label="Kapoor Transport fleet"
@@ -166,6 +166,143 @@ export default function AboutPage() {
                 <p className="text-primary/60 text-sm leading-relaxed">{desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Vision & Mission */}
+      <section className="py-24 px-6 lg:px-12 bg-white">
+        <div className="max-w-[1400px] mx-auto">
+          <div className="text-center mb-14">
+            <span className="text-cta font-black tracking-[0.35em] text-[10px] uppercase mb-3 block">
+              Purpose &amp; Direction
+            </span>
+            <h2 className="text-4xl font-black text-dark tracking-tight mb-6">
+              Our Vision &amp; Mission
+            </h2>
+            <p className="text-primary/60 leading-relaxed max-w-3xl mx-auto">
+              At Kapoor Transport Company, our identity is deeply intertwined with the aspirations
+              of a modern, self-reliant nation. We don&apos;t just see ourselves as a logistics
+              provider, but as a catalyst for the Aatmanirbhar Bharat movement, ensuring that the
+              fruits of Indian labor reach every household and marketplace.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Vision */}
+            <div className="bg-gray-50 rounded-2xl p-10 border border-outline-soft">
+              <div className="w-12 h-12 bg-cta/10 rounded-xl flex items-center justify-center mb-6">
+                <Globe className="w-6 h-6 text-cta" />
+              </div>
+              <div className="text-[9px] font-black uppercase tracking-[0.3em] text-cta mb-3">
+                Our Vision
+              </div>
+              <p className="text-primary/70 leading-relaxed text-sm">
+                To be the most trusted logistical bridge in the journey toward a Viksit Bharat
+                2047. We envision an India where every local entrepreneur, regardless of their
+                scale, has access to a world-class supply chain that is authentically Indian in
+                spirit and global in its efficiency. Our goal is to set the gold standard for
+                &ldquo;Made in India&rdquo; logistics, proving that local expertise is our
+                greatest national asset.
+              </p>
+            </div>
+
+            {/* Mission */}
+            <div className="bg-primary rounded-2xl p-10">
+              <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6">
+                <Award className="w-6 h-6 text-cta" />
+              </div>
+              <div className="text-[9px] font-black uppercase tracking-[0.3em] text-cta mb-3">
+                Our Mission
+              </div>
+              <p className="text-white/70 leading-relaxed text-sm mb-6">
+                Our mission is built on three pillars of national progress:
+              </p>
+              <div className="space-y-5">
+                {[
+                  {
+                    num: "01",
+                    title: "Empowering the Local Economy",
+                    desc: "To champion the Vocal for Local initiative by providing seamless, affordable, and reliable transport solutions.",
+                  },
+                  {
+                    num: "02",
+                    title: "Infrastructure for Independence",
+                    desc: "To reduce logistical hurdles for MSMEs and support Aatmanirbhar Bharat across all 28 states and 8 union territories.",
+                  },
+                  {
+                    num: "03",
+                    title: "Integrity in Motion",
+                    desc: 'To uphold transparency and safety, ensuring "Driving Trust Across India" is a lived reality.',
+                  },
+                ].map((pillar) => (
+                  <div key={pillar.num} className="flex gap-4">
+                    <span className="text-cta font-black text-lg leading-none shrink-0 mt-0.5">
+                      {pillar.num}
+                    </span>
+                    <div>
+                      <div className="text-white font-bold text-sm mb-1">{pillar.title}</div>
+                      <p className="text-white/50 text-sm leading-relaxed">{pillar.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership Message */}
+      <section className="py-24 px-6 lg:px-12 bg-surface-low">
+        <div className="max-w-[1400px] mx-auto">
+          <div className="text-center mb-14">
+            <span className="text-cta font-black tracking-[0.35em] text-[10px] uppercase mb-3 block">
+              From the Top
+            </span>
+            <h2 className="text-4xl font-black text-dark tracking-tight">
+              A Message from Our Leadership
+            </h2>
+          </div>
+
+          <div className="max-w-3xl mx-auto bg-white rounded-2xl p-10 md:p-14 border border-outline-soft shadow-ambient-lg relative">
+            {/* Quote mark */}
+            <div className="text-cta/20 text-[120px] font-black leading-none absolute top-4 left-8 select-none">
+              &ldquo;
+            </div>
+            <div className="relative z-10 space-y-5 text-primary/70 leading-relaxed">
+              <p>
+                At Kapoor Transport Company, we have always believed that logistics is the silent
+                heartbeat of a nation&apos;s economy. When a truck moves, a business grows, a
+                family is supported, and our country takes another step forward.
+              </p>
+              <p>
+                Our journey began with a simple observation: India&apos;s local businesses are its
+                greatest strength, yet they often face the biggest hurdles in reaching their
+                customers. The company was founded to change that. Our goal was never just to move
+                goods from point A to point B — it was to build a homegrown infrastructure that
+                every Indian entrepreneur could rely on.
+              </p>
+              <p>
+                As we look toward the vision of a Viksit Bharat, we are more committed than ever
+                to the spirit of Aatmanirbhar Bharat. We aren&apos;t just a service provider; we
+                are a partner in your growth.
+              </p>
+              <p>
+                When you see our trucks on the highway, know that they carry more than just cargo.
+                They carry the dreams of local manufacturers and the trust of a developing nation.
+              </p>
+            </div>
+            <div className="mt-10 pt-8 border-t border-outline-soft flex items-center gap-5">
+              <div className="w-14 h-14 rounded-full bg-cta/10 flex items-center justify-center shrink-0">
+                <span className="text-cta font-black text-lg">AK</span>
+              </div>
+              <div>
+                <div className="font-black text-dark text-base">Ashwani Kapoor</div>
+                <div className="text-primary/50 text-sm font-medium">
+                  Director, Kapoor Transport Company, AHB
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

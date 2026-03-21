@@ -28,8 +28,8 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Kapoor Transport – Industrial Logistics & Heavy Haulage India",
-    template: "%s | Kapoor Transport",
+    default: "Kapoor Transport Company, AHB – Industrial Logistics & Heavy Haulage India",
+    template: "%s | Kapoor Transport Company, AHB",
   },
   description:
     "India's most trusted heavy transport & logistics company. 500+ fleet, 30+ years, 28 states. ODC cargo, industrial haulage, supply chain solutions.",
@@ -40,14 +40,15 @@ export const metadata: Metadata = {
     "logistics company India",
     "heavy haulage",
     "supply chain solutions",
-    "Kapoor Transport",
+    "Kapoor Transport Company",
+    "Kapoor Transport Company AHB",
     "over dimensional cargo",
     "fleet logistics",
     "project cargo India",
   ],
-  authors: [{ name: "Kapoor Transport", url: BASE_URL }],
-  creator: "Kapoor Transport",
-  publisher: "Kapoor Transport",
+  authors: [{ name: "Kapoor Transport Company, AHB", url: BASE_URL }],
+  creator: "Kapoor Transport Company, AHB",
+  publisher: "Kapoor Transport Company, AHB",
   robots: {
     index: true,
     follow: true,
@@ -57,8 +58,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: BASE_URL,
-    siteName: "Kapoor Transport",
-    title: "Kapoor Transport – Industrial Logistics & Heavy Haulage India",
+    siteName: "Kapoor Transport Company, AHB",
+    title: "Kapoor Transport Company, AHB – Industrial Logistics & Heavy Haulage India",
     description:
       "India's most trusted heavy transport & logistics company. 500+ fleet, 30+ years, 28 states.",
     images: [
@@ -72,7 +73,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kapoor Transport – Industrial Logistics India",
+    title: "Kapoor Transport Company, AHB – Industrial Logistics India",
     description:
       "India's most trusted heavy transport & logistics company. 500+ fleet, 30+ years, 28 states.",
     images: ["/og-image.jpg"],

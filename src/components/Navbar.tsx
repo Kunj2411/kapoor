@@ -47,12 +47,12 @@ export default function Navbar() {
           </div>
           <div className="flex flex-col leading-none">
             <span className={cn(
-              "text-lg font-black tracking-tight uppercase transition-colors",
+              "text-base font-black tracking-tight uppercase transition-colors",
               scrolled ? "text-primary" : "text-white"
             )}>
-              Kapoor
+              Kapoor Transport Company
             </span>
-            <span className="text-sm font-bold text-cta tracking-widest uppercase">Transport</span>
+            <span className="text-[10px] font-bold text-cta tracking-widest uppercase">AHB</span>
           </div>
         </Link>
 

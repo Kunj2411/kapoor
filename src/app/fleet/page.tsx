@@ -53,7 +53,7 @@ export default function FleetPage() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1800&q=80&auto=format&fit=crop')",
+              "url('/fleet.jpeg')",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-dark/95 via-dark/70 to-dark/30" />

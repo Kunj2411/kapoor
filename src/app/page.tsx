@@ -10,11 +10,11 @@ import ContactSection from "@/components/sections/ContactSection";
 import CTABanner from "@/components/sections/CTABanner";
 
 export const metadata: Metadata = {
-  title: "Kapoor Transport – Industrial Logistics & Heavy Haulage India",
+  title: "Kapoor Transport Company, AHB – Industrial Logistics & Heavy Haulage India",
   description:
     "India's most trusted heavy transport & logistics company. 500+ fleet, 30+ years, 28 states. ODC cargo, industrial haulage, supply chain solutions.",
   openGraph: {
-    title: "Kapoor Transport – Industrial Logistics & Heavy Haulage India",
+    title: "Kapoor Transport Company, AHB – Industrial Logistics & Heavy Haulage India",
     description:
       "India's most trusted heavy transport & logistics company. 500+ fleet, 30+ years, 28 states.",
     url: "/",

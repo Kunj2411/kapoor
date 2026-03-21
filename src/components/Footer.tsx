@@ -14,7 +14,7 @@ export default function Footer() {
                 <Truck className="text-white w-5 h-5" />
               </div>
               <span className="text-xl font-black uppercase tracking-tight">
-                Kapoor <span className="text-cta">Transport</span>
+                Kapoor <span className="text-cta">Transport Company, AHB</span>
               </span>
             </div>
             <p className="text-white/40 leading-relaxed text-sm mb-8 max-w-xs">
@@ -95,7 +95,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/20 text-[11px] uppercase tracking-widest font-bold">
-            © {new Date().getFullYear()} Kapoor Transport & Logistics Pvt. Ltd.
+            © {new Date().getFullYear()} Kapoor Transport Company, AHB
           </p>
           <div className="flex gap-8">
             {["GST Registered"].map((badge) => (

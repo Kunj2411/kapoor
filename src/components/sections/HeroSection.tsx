@@ -58,8 +58,7 @@ export default function HeroSection() {
         <div
           className="w-full h-full bg-cover bg-center scale-105"
           style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=2070&q=80')",
+            backgroundImage: "url('/home.jpeg')",
           }}
           role="img"
           aria-label="Industrial logistics fleet on highway"

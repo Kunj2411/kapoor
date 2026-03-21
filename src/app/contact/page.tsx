@@ -4,9 +4,9 @@ import { SITE } from "@/data/site";
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Kapoor Transport",
+  title: "Contact Us | Kapoor Transport Company, AHB",
   description:
-    "Get in touch with Kapoor Transport for logistics consultations, quotes, and inquiries.",
+    "Get in touch with Kapoor Transport Company, AHB for logistics consultations, quotes, and inquiries.",
 };
 
 const offices = [
@@ -36,7 +36,7 @@ export default function ContactPage() {
           className="absolute inset-0 opacity-20 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=2000&q=80')",
+              "url('/contact.jpeg')",
           }}
         />
         <div className="max-w-[1400px] mx-auto relative z-10">
@@ -190,12 +190,12 @@ export default function ContactPage() {
               Headquarters – Ahmedabad, Gujarat
             </h2>
           </div>
-          <div className="rounded-2xl overflow-hidden shadow-ambient-lg border-8 border-white">
+          <div className="rounded-2xl shadow-ambient-lg border-8 border-white" style={{ height: 420 }}>
             <iframe
-              src="https://maps.app.goo.gl/UaYjzkJg6D5gzWSN8"
+              src="https://maps.google.com/maps?q=Hathijan+Circle+Ahmedabad+Gujarat+382445+India&t=&z=15&ie=UTF8&iwloc=&output=embed"
               width="100%"
-              height="400"
-              style={{ border: 0 }}
+              height="100%"
+              style={{ border: 0, display: "block", borderRadius: "0.75rem" }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
