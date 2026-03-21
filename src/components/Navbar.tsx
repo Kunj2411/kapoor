@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
-import { NAV_LINKS } from "@/data/site";
+import { NAV_LINKS, SITE } from "@/data/site";
 import { useModal } from "@/context/ModalContext";
 import { cn } from "@/lib/utils";
 
@@ -84,7 +84,7 @@ export default function Navbar() {
         {/* Desktop CTAs */}
         <div className="hidden lg:flex items-center gap-3">
           <a
-            href={`https://wa.me/919925195293?text=Hello%2C%20I%20need%20a%20logistics%20quote.`}
+            href={`https://wa.me/${SITE.whatsapp}?text=Hello%2C%20I%20need%20a%20logistics%20quote.`}
             target="_blank" rel="noopener noreferrer"
             className={cn(
               "text-[11px] font-bold uppercase tracking-widest px-4 py-2.5 rounded-lg border transition-all",
@@ -140,7 +140,7 @@ export default function Navbar() {
               Get Free Quote
             </button>
             <a
-              href="https://wa.me/919925195293"
+              href={`https://wa.me/${SITE.whatsapp}`}
               target="_blank" rel="noopener noreferrer"
               className="w-full text-center border border-[#25D366] text-[#25D366] font-bold uppercase tracking-widest text-sm py-3 rounded-xl"
             >

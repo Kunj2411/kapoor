@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Truck, Mail, Phone, MapPin } from "lucide-react";
+import Image from "next/image";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { SITE, NAV_LINKS } from "@/data/site";
 
 export default function Footer() {
@@ -10,8 +11,13 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-4">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-cta flex items-center justify-center rounded-lg">
-                <Truck className="text-white w-5 h-5" />
+              <div className="relative w-10 h-10 rounded-lg overflow-hidden ring-2 ring-white/10">
+                <Image
+                  src="/logo.jpeg"
+                  alt="Kapoor Transport Company Logo"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <span className="text-xl font-black uppercase tracking-tight">
                 Kapoor <span className="text-cta">Transport Company, AHB</span>

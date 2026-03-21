@@ -3,7 +3,7 @@ export const SITE = {
   tagline: "Driving Trust Across India",
   phone: "+91-9925195293",
   phone2: "+91-8238885522",
-  whatsapp: "919925195293",
+  whatsapp: "918238885522",
   email: "ashwani@kapoortransportcompany.in",
   address: "Near G-4, Baleshwar Silverline, Opposite Baleshwar City, Hathijan Circle, Ahmedabad, Gujarat 382445, India",
   founded: "1994",
