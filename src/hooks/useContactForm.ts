@@ -69,15 +69,25 @@ export function useContactForm(defaultService = "") {
     setStatus("loading");
     setServerError("");
     try {
-      const res = await fetch("/api/contact", {
+      const payload = {
+        access_key: "1ef551f6-2aa8-4d95-9ee9-2043c60bb47f",
+        subject: `New Logistics Inquiry – ${form.service}`,
+        from_name: form.name,
+        name: form.name,
+        email: form.email,
+        phone: form.phone,
+        service: form.service,
+        message: form.message || "No additional details provided.",
+      };
+
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(payload),
       });
       const json = await res.json();
-      if (!res.ok) {
-        if (json.errors) setFieldErrors(json.errors);
-        else setServerError(json.error || "Something went wrong. Please try again.");
+      if (!json.success) {
+        setServerError(json.message || "Something went wrong. Please try again.");
         setStatus("error");
         return;
       }
