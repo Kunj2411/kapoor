@@ -105,7 +105,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/20 text-[11px] uppercase tracking-widest font-bold">
-            © {new Date().getFullYear()} Kapoor Transport Company, AHB</br>
+            © {new Date().getFullYear()} Kapoor Transport Company, AHB<br/>
           <span>
   Designed By&nbsp;<a href="https://temahux.com" target="_blank">temahux.com</a>
 </span>
