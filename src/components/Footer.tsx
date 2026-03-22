@@ -106,15 +106,8 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/20 text-[11px] uppercase tracking-widest font-bold">
-<<<<<<< HEAD
             © {new Date().getFullYear()} Kapoor Transport Company, AHB<br />
             <span>Designed By&nbsp;<a href="https://temahux.com" target="_blank">temahux.com</a></span>
-=======
-            © {new Date().getFullYear()} Kapoor Transport Company, AHB<br/>
-          <span>
-  Designed By&nbsp;<a href="https://temahux.com" target="_blank">temahux.com</a>
-</span>
->>>>>>> cee431f562906ae6ce49592c00f2ec795077596a
           </p>
           <div className="flex gap-8">
             {["GST Registered"].map((badge) => (
