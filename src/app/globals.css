@@ -1,38 +1,6 @@
-@import "tailwindcss";
-
-@theme {
-  /* ── Fonts ── */
-  --font-sans: "Inter", sans-serif;
-
-  /* ── Brand Colors ── */
-  --color-primary: #495D6E;
-  --color-primary-dark: #324556;
-  --color-cta: #D89042;
-  --color-cta-dark: #8b5000;
-  --color-dark: #212223;
-  --color-neutral: #7F7E7C;
-
-  /* ── Surface Colors ── */
-  --color-surface: #fcf9f6;
-  --color-surface-low: #f6f3f0;
-  --color-surface-card: #ffffff;
-
-  /* ── Border ── */
-  --color-outline-soft: rgba(195, 199, 204, 0.3);
-
-  /* ── Shadows ── */
-  --shadow-ambient: 0 20px 40px -15px rgba(73, 93, 110, 0.12);
-  --shadow-ambient-lg: 0 30px 60px -20px rgba(73, 93, 110, 0.18);
-
-  /* ── Background Images ── */
-  --background-image-hero-gradient: linear-gradient(
-    75deg,
-    rgba(33, 34, 35, 0.95) 0%,
-    rgba(33, 34, 35, 0.6) 50%,
-    rgba(33, 34, 35, 0.2) 100%
-  );
-  --background-image-primary-gradient: linear-gradient(135deg, #324556 0%, #495D6E 100%);
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
   html {
